@@ -102,12 +102,12 @@ def winner(board)
 end
 
 def play(board)
-  if over?(board) == false
-    turn(board)
-  elsif draw?(board) == true
-    puts 'Cat\'s Game!'
+while over?(board) == false
+  turn(board)
+end
+  if draw?(board) == true
+    return 'Cat\'s Game!'
   else
-    puts 'Congratulations '+ board[won?(board)[0] +'!']
+    return 'Congratulations '+ board[won?(board)[0] +'!']
   end
-  
 end
