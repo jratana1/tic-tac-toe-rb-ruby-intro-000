@@ -100,3 +100,15 @@ def winner(board)
     return board[won?(board)[0]]
   end
 end
+
+def play(board)
+  if over?(board) == false
+    turn(board)
+  elsif draw?(board) == true
+    return 'Cat\'s Game!'
+  else
+    return 'Congratulations! The winner is '+ board[won?(board)[0]]'
+    
+  end
+  
+end
