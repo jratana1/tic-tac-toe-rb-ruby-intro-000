@@ -108,7 +108,7 @@ def play(board)
     return 'Cat\'s Game!'
   else
     return 'Congratulations! The winner is '+ board[won?(board)[0]]'
-    
+
   end
-  
+
 end
