@@ -107,6 +107,7 @@ def play(board)
   elsif draw?(board) == true
     return 'Cat\'s Game!'
   else
-    return 'Congratulations! The winner is '+ board[won?(board)[0]]
+    return 'Congratulations '+ board[won?(board)[0] +'!']
   end
+  
 end
