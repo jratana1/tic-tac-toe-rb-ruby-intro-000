@@ -103,7 +103,7 @@ end
 
 def play(board)
 
-while over?(board) == false
+until over?(board) == true
   turn(board)
 end
 
