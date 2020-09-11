@@ -107,10 +107,9 @@ while over?(board) == false
   turn(board)
 end
 
-  if draw?(board) == true
+  if draw?(board)
     puts 'Cat\'s Game!'
-  else
-    win = winner(board)
-    puts 'Congratulations {win}!'
+  elsif won?(board)
+    puts "Congratulations #{winner(board)}!"
   end
 end
