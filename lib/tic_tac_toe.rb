@@ -105,9 +105,9 @@ def play(board)
   if over?(board) == false
     turn(board)
   elsif draw?(board) == true
-    print 'Cat\'s Game!'
+    puts 'Cat\'s Game!'
   else
-    print 'Congratulations '+ board[won?(board)[0] +'!']
+    puts 'Congratulations '+ board[won?(board)[0] +'!']
   end
   
 end
