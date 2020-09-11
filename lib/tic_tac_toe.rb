@@ -108,6 +108,7 @@ end
   if draw?(board) == true
     return 'Cat\'s Game!'
   else
-    return 'Congratulations '+ board[won?(board)[0] +'!']
+    win = winner(board)
+    return 'Congratulations #{winner}!']
   end
 end
