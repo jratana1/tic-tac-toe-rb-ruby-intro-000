@@ -111,6 +111,6 @@ end
     puts 'Cat\'s Game!'
   else
     win = winner(board)
-    puts'Congratulations #{win}!'
+    puts (f'Congratulations {win}!')
   end
 end
