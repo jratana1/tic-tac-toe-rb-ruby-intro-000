@@ -108,9 +108,9 @@ while over?(board) == false
 end
 
   if draw?(board) == true
-    return 'Cat\'s Game!'
+    puts 'Cat\'s Game!'
   else
     win = winner(board)
-    return 'Congratulations #{win}!'
+    puts'Congratulations #{win}!'
   end
 end
